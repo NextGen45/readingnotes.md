@@ -1,4 +1,4 @@
-# How  are respositories used
+## How  are respositories used
 respositories are used to organize a single project. Which can contain images and other filies as well.
 
 
@@ -31,11 +31,12 @@ $ git remote -v
 
 * remote3 https://github.com/remote3/example (push)
 
-Adding Remotes
-To make a new remote Git repository with a short name, use this  format:
 
+#### Adding Remotes
+To make a new remote Git repository with a short name, use this format
 git remote add shortname url
-Example:
+
+For example:
 
 $ git remote
 
@@ -49,26 +50,24 @@ origin https://github.com/johndoe/project1 (fetch)
 
 origin https://github.com/johndoe/project1 (push)
 
-js     https://github.com/janesmith/project1 (fetch)
+js     https://github.com/Tommy/project1 (fetch)
 
-js     https://github.com/janesmith/project1 (push)
-This addition of these remote and short names allows you to use shortnames for Git collaboration.
+js     https://github.com/Tommy/project1 (push)
+
 
 Fetching
 Fetching entails pulling data that you don’t have from a remote project.
-
-Here is the command format:
-
+Here is the command format
 git fetch [remote-name]
 Now, you should also possess the references to all branches for that remote (more on branching later).
 
-Cloned Repositories
-
+##### Cloned Repositories
 For cloned repositories, use the command git fetch origin to pull down any new changes that were pushed to the server since you cloned or last fetched from it.
 
-Note: git fetch solely pulls new data to a local repository; it does not merge changes with or modify your local work. We will discuss merging in a later section. Later, we will also discuss git pull , which allows for fetching and automatic merging.
+git fetch solely pulls new data to a local repository; it does not merge changes with or modify your local work. We will discuss merging in a later section. Later, we will also discuss git pull , which allows for fetching and automatic merging.
 
-Pushing
+
+##### Pushing
 To push your changes “upstream” for sharing, you would use the following git push command format:
 
 git push [remote-name][branch-name]
