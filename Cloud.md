@@ -1,30 +1,35 @@
-How is are respositories used
-respositories are used to make fil
+# How  are respositories used
+respositories are used to organize a single project. Which can contain images and other filies as well.
 
-how cloning repositories work 
-Well first  Git automatically gives the name origin to then  you clone  the name master to your local branch.
 
-how to see Your Remotes
 
-When running the git remote command you will  be able to  view the short names for exsmaple the “origin,”.
+## cloning repositories 
 
-when using git remote -v, you can view all the remote URLs next to their corresponding short names.
+Well first Git will automatically give the origin name then you clone the  master name to your local branch.
+
+### how to see Your Remotes
+ When running the git remote command you will 
+be able to  view the short names for example the “origin,”.
+when using git remote -v, you can view all the remote URLs next
+to their corresponding short names.
+ 
+
 
 $ cd example
 
 $ git remote -v
 
-remote1 https://github.com/remote1/example (fetch)
+* remote1 https://github.com/remote1/example (fetch)
 
-remote1 https://github.com/remote1/example (push)
+* remote1 https://github.com/remote1/example (push)
 
-remote2 https://github.com/remote2/example (fetch)
+* remote2 https://github.com/remote2/example (fetch)
 
-remote2 https://github.com/remote2/example (push)
+* remote2 https://github.com/remote2/example (push)
 
-remote3 https://github.com/remote3/example (fetch)
+* remote3 https://github.com/remote3/example (fetch)
 
-remote3 https://github.com/remote3/example (push)
+* remote3 https://github.com/remote3/example (push)
 
 Adding Remotes
 To make a new remote Git repository with a short name, use this  format:
@@ -55,7 +60,7 @@ Fetching entails pulling data that you don’t have from a remote project.
 Here is the command format:
 
 git fetch [remote-name]
-*Now, you should also possess the references to all branches for that remote (more on branching later).
+Now, you should also possess the references to all branches for that remote (more on branching later).
 
 Cloned Repositories
 
@@ -81,61 +86,26 @@ To rename a remote’s short name, use the git remote rename command.
 
 Example:
 
-$ git remote rename js jane
+$ git remote rename js Tommy
 
 $ git remote
 
 origin
 
-jane
-*In the example above, we can see that the remote’s short name has been changed from js to Jane. The command git remote lists our existing remotes, which jane is now one of. The rename action also alters names of remote branches: js/master would change to jane/master.
+Tommy
 
-Remove
+For the example above, you can see that the remote’s short name has been changed from js to Tommy. The command git remote lists the existing remotes, which my name is now one of. There is rename action that alters the names of remote branches: js/master would change to Tommy/master.
+
+* Remove
 
 To remove a remote for whatever reason (e.g., a contributor has left the team, the server has moved), simply use the git remote rm command:
 
-Example:
+For example:
 
-$ git remote rm jane
+$ git remote rm Tommy
 
 $ git remote
 
 origin
-NOTE: Reminder: “origin” is simply the default remote name when you use the git clone command.
+“origin” is simply the default remote name when you use the git clone command.
 
-Undoing Actions
-Git has mechanisms for undoing certain actions.
-
-Commit Mistakes
-You can use the –amend command when you need to alter a commit message or forgot to add some files.
-
-$ git commit --amend
-In the example above, you can use this command to easily change your commit message, if no changes were made since the newest commit.
-
-$ git commit -m “my first commit”
-
-$ git add example_file
-
-$ git commit --amend
-In the above example, a forgotten file is added to a commit.
-
-Unstaging a File
-$ git reset HEAD index.html
-
-Unstaged changes after reset:
-
-M index.html
-Above, we see that the git reset HEAD command unstaged the index.html file.
-
-NOTE: When git reset --hard is used, Git overwrites all changes in the working directory, permanently destroying any uncommitted changes.
-
-Undo a Committed Snapshot
-To undo changes resulting from a particular commit, use the git revert command. This command appends a new commit that undoes changes introduced by a specific commit. This prevents Git from losing history.
-
-$ git commit -m "Example Commit"
-
-$ git revert HEAD
-*In the example above, a new commit gets appended and rolls back changes from a specific commit.
-
-Unmodifying a File
-To have a file return to its state when you last committed, utilize the git checkout command.
