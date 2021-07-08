@@ -1,5 +1,6 @@
 Hi my name is Tommy. I enjoy playing video games and watching tv shows.
 
+[My profile](https://github.com/NextGen45)
 
 # growth mindset?
 
@@ -12,6 +13,23 @@ excited while going through the process.*
 * don't give up
 * Stay level headed
 * Don't slack on self progress
+
+### Markdown examples 
+* # heading 1
+* **bold**
+* *Italic*
+*  <Quoted text
+*  List
+	   *
+	   *
+	   
+	   
+# Detailed info on markdown
+	
+[click me](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists)
+
+
+
 
 
 
